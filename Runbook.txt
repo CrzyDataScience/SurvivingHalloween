@@ -1,0 +1,33 @@
+-> Upload dataset to AzureML
+-> New experiment
+-> Saved Datasets -> horror_deaths_Halloween
+-> Select Columns in Dataset
+   - Columns: Character_age_group,Character_sex,Profession_Category,Siblings,Partner,Body_Type,Death_in_movie
+-> Clean Missing Data
+   - Column: Siblings
+   - Cleaning mode: Custom substitution
+   - Replacement value: 0
+-> Clean Missing Data
+   - Column: Partner
+   - Cleanup mode: Custom substitution
+   - Replacement value: No
+-> Clean Missing Data
+   - Column: Profession_Category
+   - Cleanup mode: Remove entire row
+-> Edit Metadata
+   - Columns: Character_age_group,Character_sex,Profession_Category,Partner,Body_Type,Death_in_movie
+   - Categorical: Make categorical
+-> Split Data
+   - Fraction: 0,8
+   - Random seed: 1234
+-> Train Model
+   - Column: Death_in_move
+-> Two-Class Boosted Decision Tree
+   - Default values
+-> Score model
+-> Evaluate model
+
+Create predictive experiment
+-----------------------------
+-> Move Web Service Input connection to Score Model module
+-> Deploy
