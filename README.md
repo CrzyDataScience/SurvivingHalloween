@@ -1,6 +1,6 @@
 # Surviving Halloween
 This repository contains all the example code for the Crazy Data Science - Surviving Halloween project.
-(https://www.youtube.com/watch?v=wKt3EwHgRtM)
+(https://youtu.be/A3TYuk5Xk7w)
 
 
 ## Reproducing the examples from the start
